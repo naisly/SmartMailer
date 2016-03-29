@@ -2,6 +2,9 @@
 
 return [
 
+    // php artisan make:command SendEmail --queued
+    // Queue::push(new SendEmail($message));
+
     /*
     |--------------------------------------------------------------------------
     | Default Queue Driver

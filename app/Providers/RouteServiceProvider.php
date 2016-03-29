@@ -26,7 +26,10 @@ class RouteServiceProvider extends ServiceProvider
     {
         //
 
+        $router->pattern('id', '[0-9]+'); // Must be integer
         parent::boot($router);
+
+        //$router->model('user', 'App\User');
     }
 
     /**
