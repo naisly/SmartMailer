@@ -18,7 +18,7 @@ return [
 
     // Default file
 
-    'driver' => env('SESSION_DRIVER', 'memcache'),
+    'driver' => env('SESSION_DRIVER', 'redis'),
 
     /*
     |--------------------------------------------------------------------------
