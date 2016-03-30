@@ -13,7 +13,8 @@
         "league/flysystem": " ~1.0",
         "aws/aws-sdk-php": " ~2.7",
         "swiggles/memcache": " ~2.0",
-        "predis/predis": " ~1.0"
+        "predis/predis": " ~1.0",
+        "clue/redis-server": " v0.1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

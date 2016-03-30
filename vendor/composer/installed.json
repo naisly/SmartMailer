@@ -4013,5 +4013,337 @@
             "predis",
             "redis"
         ]
+    },
+    {
+        "name": "evenement/evenement",
+        "version": "v2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/igorw/evenement.git",
+            "reference": "f6e843799fd4f4184d54d8fc7b5b3551c9fa803e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/igorw/evenement/zipball/f6e843799fd4f4184d54d8fc7b5b3551c9fa803e",
+            "reference": "f6e843799fd4f4184d54d8fc7b5b3551c9fa803e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2012-11-02 14:49:47",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Evenement": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch",
+                "homepage": "http://wiedler.ch/igor/"
+            }
+        ],
+        "description": "Événement is a very simple event dispatching library for PHP",
+        "keywords": [
+            "event-dispatcher",
+            "event-emitter"
+        ]
+    },
+    {
+        "name": "clue/redis-protocol",
+        "version": "v0.3.0",
+        "version_normalized": "0.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/clue/php-redis-protocol.git",
+            "reference": "2ffcdfa281b1084f666340e13f05a1d26d35ed26"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/clue/php-redis-protocol/zipball/2ffcdfa281b1084f666340e13f05a1d26d35ed26",
+            "reference": "2ffcdfa281b1084f666340e13f05a1d26d35ed26",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "time": "2014-01-26 23:49:05",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Clue\\Redis\\Protocol": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Christian Lück",
+                "email": "christian@lueck.tv"
+            }
+        ],
+        "description": "A streaming redis wire protocol parser and serializer implementation in PHP",
+        "homepage": "https://github.com/clue/redis-protocol",
+        "keywords": [
+            "parser",
+            "protocol",
+            "redis",
+            "serializer",
+            "streaming"
+        ]
+    },
+    {
+        "name": "react/event-loop",
+        "version": "v0.4.2",
+        "version_normalized": "0.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/event-loop.git",
+            "reference": "164799f73175e1c80bba92a220ea35df6ca371dd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/event-loop/zipball/164799f73175e1c80bba92a220ea35df6ca371dd",
+            "reference": "164799f73175e1c80bba92a220ea35df6ca371dd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "suggest": {
+            "ext-event": "~1.0",
+            "ext-libev": "*",
+            "ext-libevent": ">=0.1.0"
+        },
+        "time": "2016-03-08 02:09:32",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "React\\EventLoop\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Event loop abstraction layer that libraries can use for evented I/O.",
+        "keywords": [
+            "asynchronous",
+            "event-loop"
+        ]
+    },
+    {
+        "name": "react/stream",
+        "version": "v0.4.3",
+        "version_normalized": "0.4.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/stream.git",
+            "reference": "305b2328d2a2e157bc13b61a0f5c6e41b666b188"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/stream/zipball/305b2328d2a2e157bc13b61a0f5c6e41b666b188",
+            "reference": "305b2328d2a2e157bc13b61a0f5c6e41b666b188",
+            "shasum": ""
+        },
+        "require": {
+            "evenement/evenement": "^2.0|^1.0",
+            "php": ">=5.3.8"
+        },
+        "require-dev": {
+            "react/event-loop": "^0.4|^0.3",
+            "react/promise": "^2.0|^1.0"
+        },
+        "suggest": {
+            "react/event-loop": "^0.4",
+            "react/promise": "^2.0"
+        },
+        "time": "2015-10-07 18:32:58",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "React\\Stream\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Basic readable and writable stream interfaces that support piping.",
+        "keywords": [
+            "pipe",
+            "stream"
+        ]
+    },
+    {
+        "name": "react/socket",
+        "version": "v0.4.3",
+        "version_normalized": "0.4.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/socket.git",
+            "reference": "ce015ec5879b96f5d30905f035f223aa85013fcc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/socket/zipball/ce015ec5879b96f5d30905f035f223aa85013fcc",
+            "reference": "ce015ec5879b96f5d30905f035f223aa85013fcc",
+            "shasum": ""
+        },
+        "require": {
+            "evenement/evenement": "~2.0|~1.0",
+            "php": ">=5.3.0",
+            "react/event-loop": "0.4.*|0.3.*",
+            "react/stream": "0.4.*|0.3.*"
+        },
+        "time": "2016-03-01 20:10:35",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "React\\Socket\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Library for building an evented socket server.",
+        "keywords": [
+            "Socket"
+        ]
+    },
+    {
+        "name": "react/promise",
+        "version": "v2.3.0",
+        "version_normalized": "2.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/promise.git",
+            "reference": "8ffacee1171e33a1c129f424bf1ec36e062eba82"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/promise/zipball/8ffacee1171e33a1c129f424bf1ec36e062eba82",
+            "reference": "8ffacee1171e33a1c129f424bf1ec36e062eba82",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-03-24 21:20:22",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "React\\Promise\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jan Sorgalla",
+                "email": "jsorgalla@gmail.com"
+            }
+        ],
+        "description": "A lightweight implementation of CommonJS Promises/A for PHP"
+    },
+    {
+        "name": "clue/redis-server",
+        "version": "v0.1.0",
+        "version_normalized": "0.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/clue/php-redis-server.git",
+            "reference": "bfe79beadfe76b9d532d766a732b43104e6587c9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/clue/php-redis-server/zipball/bfe79beadfe76b9d532d766a732b43104e6587c9",
+            "reference": "bfe79beadfe76b9d532d766a732b43104e6587c9",
+            "shasum": ""
+        },
+        "require": {
+            "clue/redis-protocol": "0.3.*",
+            "evenement/evenement": "~1.0|~2.0",
+            "php": ">=5.3",
+            "react/event-loop": "0.3.*|0.4.*",
+            "react/promise": "~1.0|~2.0",
+            "react/socket": "0.3.*|0.4.*"
+        },
+        "time": "2014-09-04 13:56:08",
+        "bin": [
+            "bin/redis-server.php"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Clue\\Redis\\Server\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Christian Lück",
+                "email": "christian@lueck.tv"
+            }
+        ],
+        "description": "A redis server implementation in pure PHP",
+        "homepage": "https://github.com/clue/php-redis-server",
+        "keywords": [
+            "async",
+            "react",
+            "redis",
+            "server"
+        ]
     }
 ]
