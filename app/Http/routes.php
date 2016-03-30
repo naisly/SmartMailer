@@ -38,6 +38,24 @@ Route::group(['middleware' => 'old'], function() { // test
     });
 });
 
+Route::post('/task', function (Request $request) {
+    $validator = Validator::make($request->all(), [
+        'name' => 'required|max:255',
+    ]);
+
+    if ($validator->fails()) {
+        return redirect('/')
+            ->withInput()
+            ->withErrors($validator);
+    }
+
+    // Create The Task...
+});
+
+Route::get('/tasks', function () {
+    return view('tasks');
+});
+
 /*
 Route::get('profile', [
     'middleware' => 'auth',
@@ -51,3 +69,7 @@ Route::resource('photo', 'PhotoController',
         ['except' => ['create', 'store', 'update', 'destroy']]);
 
 */
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
