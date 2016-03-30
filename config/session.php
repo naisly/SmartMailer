@@ -16,7 +16,9 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER', 'file'),
+    // Default file
+
+    'driver' => env('SESSION_DRIVER', 'memcache'),
 
     /*
     |--------------------------------------------------------------------------

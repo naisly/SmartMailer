@@ -16,6 +16,10 @@
 
 Route::group(['middleware' => ['web']], function () {
 
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
+
     Route::get('/', function () {
         return view('welcome');
     });
@@ -69,7 +73,3 @@ Route::resource('photo', 'PhotoController',
         ['except' => ['create', 'store', 'update', 'destroy']]);
 
 */
-
-Route::auth();
-
-Route::get('/home', 'HomeController@index');

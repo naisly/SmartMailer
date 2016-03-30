@@ -11,7 +11,8 @@
         "doctrine/dbal": "v2.4.2",
         "barryvdh/laravel-debugbar": "^2.2",
         "league/flysystem": " ~1.0",
-        "aws/aws-sdk-php": " ~2.7"
+        "aws/aws-sdk-php": " ~2.7",
+        "swiggles/memcache": " ~2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
